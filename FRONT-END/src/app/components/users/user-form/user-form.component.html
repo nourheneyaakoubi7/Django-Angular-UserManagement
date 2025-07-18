@@ -1,0 +1,21 @@
+<div class="user-form">
+  <h2>{{ isEdit ? 'Modifier un utilisateur' : 'Ajouter un utilisateur' }}</h2>
+  <form [formGroup]="userForm" (ngSubmit)="submitForm()">
+    <div>
+      <label for="name">Nom :</label>
+      <input id="name" formControlName="name" type="text" />
+    </div>
+    <div>
+      <label for="matricule">Matricule :</label>
+      <input id="matricule" formControlName="matricule" type="text" />
+    </div>
+    <div>
+      <label for="email">Email :</label>
+      <input id="email" formControlName="email" type="email" />
+    </div>
+    <div>
+      <button type="submit">{{ isEdit ? 'Enregistrer les modifications' : 'Ajouter' }}</button>
+      <button type="button" routerLink="/">Annuler</button>
+    </div>
+  </form>
+</div>

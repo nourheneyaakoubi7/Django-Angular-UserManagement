@@ -1,0 +1,12 @@
+<div class="app">
+  <header>
+    <h1>{{ title }}</h1>
+    <nav>
+      <a routerLink="/" routerLinkActive="active">Liste des utilisateurs</a>
+      <a routerLink="/add-user" routerLinkActive="active">Ajouter un utilisateur</a>
+    </nav>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

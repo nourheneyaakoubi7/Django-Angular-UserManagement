@@ -1,0 +1,47 @@
+.user-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+
+    div {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+
+    button {
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      color: #fff;
+      background-color: #007bff;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      &:last-child {
+        background-color: #6c757d;
+
+        &:hover {
+          background-color: #5a6268;
+        }
+      }
+    }
+  }
+}
